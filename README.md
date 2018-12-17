@@ -1,4 +1,6 @@
-# Next.js Hooks Typescript example
+# Material-UI with Next.js Hooks and Typescript example
+
+Converted from [next.js demo with hooks](https://github.com/mui-org/material-ui/pull/13920)
 
 ## How to use
 

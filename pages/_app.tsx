@@ -1,6 +1,6 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { StylesProvider, ThemeProvider } from '@material-ui/styles';
-import App, { AppProps, Container, DefaultAppIProps } from 'next/app';
+import App, { Container } from 'next/app';
 import Head from 'next/head';
 // --- Post bootstrap -----
 import React from 'react';
@@ -8,8 +8,9 @@ import '../src/bootstrap';
 import getPageContext, { PageContext } from '../src/getPageContext';
 
 class MyApp extends App {
-  constructor(props: DefaultAppIProps & AppProps) {
-    super(props);
+  constructor() {
+    // @ts-ignore
+    super();
     this.pageContext = getPageContext();
   }
 
